@@ -13,6 +13,7 @@ class MyWidget(QMainWindow):
         self.pushButton.clicked.connect(self.run)
         self.flag = False
 
+
     def run(self):
         self.flag = True
         self.update()
@@ -31,7 +32,6 @@ class MyWidget(QMainWindow):
         y = randint(100, 400)
         r = randint(0, 100)
         self.qp.drawEllipse(x,y, r, r)
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
